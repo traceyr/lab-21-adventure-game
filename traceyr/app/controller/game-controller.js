@@ -1,7 +1,7 @@
 'use strict';
 
 const angular = require('angular');
-const lab21 = angular.module('lab-21');
+const lab21 = angular.module('lab21');
 
 lab21.controller('GameController', ['$log', GameController]);
 

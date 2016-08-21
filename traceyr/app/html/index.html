@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html ng-app="lab-21">
+<html ng-app="lab21">
   <head>
     <title>Lab 21 Adventure</title>
     <script src="bundle.js"></script>
     <link rel="stylesheet" href="bundle.css" />
   </head>
   <body>
-    <main ng-controller="">
+    <main ng-controller="GameController as gameCtrl">
       <h1>WELCOME TO THE GAME</h1>
+      <p>
+        Your objective: Collect all the books!
+      </p>
+      <p>
+        Every room you enter will give you a new book
+      </p>
+
+      <form name="gameForm" novalidate>
+        <label for="direction">Choose a Direction to Move: </label>
+        <select name="direction" ng-model="gameForm.direction">
+          <option ng-repeat="direction in gameCtrl.directions" value="{{direction}}">
+            {{direction}}
+          </option>
+        </select>
+
+
+      </form>
     </main>
   </body>
 </html>
