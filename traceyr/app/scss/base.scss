@@ -10,5 +10,17 @@ body {
 form {
   color: $app-dark;
   text-align: center;
-  border: 3px dashed 
+}
+
+ol{
+  border: 3px dashed $app-focus;
+}
+
+li{
+  margin-left: 5px;
+  padding: 5px;
+}
+
+p, h1 {
+  text-align: center;
 }
