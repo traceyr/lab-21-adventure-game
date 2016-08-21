@@ -6,3 +6,9 @@ body {
   background-color: $app-default;
   color: $app-light;
 }
+
+form {
+  color: $app-dark;
+  text-align: center;
+  border: 3px dashed 
+}

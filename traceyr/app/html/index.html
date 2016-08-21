@@ -22,9 +22,15 @@
             {{direction}}
           </option>
         </select>
-
-
+        <button type="button" ng-click="gameCtrl.moveDirection(gameForm.direction)">Wander</button>
       </form>
+
+      <ol>
+        <li ng-repeat="item in gameCtrl.history track by item.id">
+          {{item.text}}
+        </li>
+      </ol>
+
     </main>
   </body>
 </html>
